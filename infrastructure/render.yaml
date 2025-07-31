@@ -1,0 +1,14 @@
+# Define your serverless functions and services for Render
+services:
+  - name: bhashaconnect-server
+    type: web
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SUPABASE_URL
+        value: your-supabase-url
+      - key: SUPABASE_KEY
+        value: your-supabase-key
+      - key: RAZORPAY_KEY
+        value: your-razorpay-key
